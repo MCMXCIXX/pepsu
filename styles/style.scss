@@ -1,0 +1,312 @@
+@import '_font-face.scss';
+@import '_reset.scss';
+@import '_vars.scss';
+
+body {
+	font-family: 'NovitoNova-Regular';
+	color: #fff;
+}
+* {
+	box-sizing: border-box;
+	// cursor: url('paw-cursor.cur'), pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.main {
+	background: #00cef5;
+	background-image: url(../images/main-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container {
+	max-width: 1461px;
+	margin: 0 auto;
+}
+.top-block {
+	padding: 158px 0 150px 0;
+	display: flex;
+	justify-content: end;
+}
+.top-block__inner {
+}
+.top-title {
+	text-align: center;
+	font-family: 'Just-Breathe';
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.main-title {
+	color: #fff;
+
+	text-align: center;
+	-webkit-text-stroke-width: 2;
+	-webkit-text-stroke-color: #fff;
+	font-size: 251px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 10.04px;
+}
+.btns-wrapper {
+	margin-top: 98px;
+	margin-bottom: 60px;
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+.top-block__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 58px;
+	height: 58px;
+	border-radius: 100%;
+	background-color: #ff8a00;
+	border: 4px solid #b54c00;
+}
+.top-mb-bg {
+	display: none;
+}
+.top-block__link--buy {
+	font-size: 88px;
+	width: 286px;
+	height: 136px;
+	background-image: url(../images/buy-bg.png);
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	background-size: cover;
+}
+.ca {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Just-Breathe';
+	font-size: 30px;
+	text-align: center;
+	background-image: url(../images/ca-bg.png);
+	background-size: cover;
+	max-width: 550px;
+	height: 60px;
+	margin: 0 auto;
+}
+.hottest {
+}
+.hottest__title {
+	max-width: 1550px;
+	height: 450px;
+	background-image: url(../images/hottest.png);
+	background-size: cover;
+	margin: 0 auto;
+	margin-top: -50px;
+}
+.hottest__subtitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 97px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #fff;
+	background-image: url(../images/hottest-subtitle.png);
+	max-width: 1419px;
+	height: 184px;
+	margin: 0 auto;
+	margin-top: 394px;
+	width: 100%;
+}
+.roadmap {
+}
+.roadmap__title {
+	font-size: 242px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 100px;
+}
+.roadmap__list {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+}
+.item-wrapper {
+	width: 416px;
+	height: 371px;
+	padding: 12px;
+	background: #1c1c1c;
+	border-radius: 36px;
+}
+.item-wrapper--center {
+	transform: translateY(80px);
+}
+.roadmap__item {
+	border-radius: 36px;
+	border: 4px solid #fff;
+	height: 347px;
+	display: flex;
+	flex-direction: column;
+}
+.roadmap__item--june {
+	box-shadow: -8px -7px 9.3px 0px #ff8a00 inset, 7px 8px 9.3px 0px #ff8a00 inset,
+		0px 0px 9.3px 0px #ff8a00, 0px 0px 6.6px 0px #ff8a00;
+}
+.roadmap__item-title {
+	font-size: 104px;
+	flex-grow: 1;
+	margin-top: 25px;
+}
+.roadmap__item-title--june {
+	text-shadow: 0px 2px 4.2px #2578ff, 0px 2px 78.5px #2578ff,
+		0px 2px 20.9px #2578ff;
+	-webkit-text-stroke-width: 2;
+	-webkit-text-stroke-color: #2578ff;
+
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #ebf2ff;
+	background-image: url(../images/june-bg.png);
+	background-position: -20px -60px;
+}
+
+.roadmap__item--july {
+	border-radius: 36px;
+	border: 4px solid #e3e6ff;
+	background: #1c1c1c;
+	box-shadow: -8px -7px 9.3px 0px #2578ff inset, 7px 8px 9.3px 0px #2578ff inset,
+		0px 0px 9.3px 0px #2578ff, 0px 0px 6.6px 0px #2578ff;
+}
+.roadmap__item--august {
+	border-radius: 36px;
+	border: 4px solid #fff;
+	background: #1c1c1c;
+	box-shadow: -8px -7px 9.3px 0px #ff8a00 inset, 7px 8px 9.3px 0px #ff8a00 inset,
+		0px 0px 9.3px 0px #ff8a00, 0px 0px 6.6px 0px #ff8a00;
+}
+.roadmap__item--july .roadmap__text,
+.roadmap__item--august .roadmap__text {
+	text-align: left;
+	padding-left: 40px;
+	margin-top: 20px;
+}
+.roadmap__text {
+	margin: 0 auto;
+	color: #fff;
+	max-width: 296px;
+	text-align: center;
+	font-family: 'Just-Breathe';
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 10px;
+	margin-bottom: 36px;
+}
+.roadmap__item-title--july {
+	color: #ffebd3;
+
+	text-align: end;
+	text-shadow: 0px 2px 4.2px #ff8a00, 0px 2px 78.5px #ff8a00,
+		0px 2px 20.9px #ff8a00;
+	-webkit-text-stroke-width: 1;
+	-webkit-text-stroke-color: #ff8a00;
+	padding-right: 40px;
+	background-image: url(../images/july-bg.png);
+	background-repeat: no-repeat;
+	background-position: -36px -55px;
+}
+.roadmap__text-wrapper {
+	display: flex;
+}
+.roadmap__item-img {
+	max-width: 162px;
+}
+.roadmap__item-title--august {
+	color: #fbe3ff;
+
+	text-align: start;
+	text-shadow: 0px 2px 4.2px #db00ff, 0px 2px 78.5px #db00ff,
+		0px 2px 20.9px #db00ff;
+	-webkit-text-stroke-width: 1;
+	-webkit-text-stroke-color: #db00ff;
+	background-image: url(../images/august-bg.png);
+	background-position: 240px 73px;
+	padding-left: 45px;
+	background-repeat: no-repeat;
+}
+.roadmap__item-title span {
+	animation: neon-4 linear infinite 2s;
+}
+.footer {
+	overflow: hidden;
+}
+.footer__inner {
+	max-width: 500px;
+}
+.container {
+}
+.container--footer {
+	padding-top: 267px;
+	display: flex;
+	justify-content: end;
+}
+.buy {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.social__links {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 42px;
+}
+.ca--footer {
+	width: 550px;
+	height: 60px;
+	background-image: url(../images/ca-footer-bg.png);
+	background-size: cover;
+	font-weight: 400;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-bottom: 400px;
+}
+@keyframes neon-4 {
+	78% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+	79% {
+		color: #0b3960;
+	}
+	80% {
+		text-shadow: none;
+	}
+	81% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+	82% {
+		color: #0b3960;
+		text-shadow: none;
+	}
+	83% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+	92% {
+		color: #0b3960;
+		text-shadow: none;
+	}
+	92.5% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+}
+@import '_media.scss';
